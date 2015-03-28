@@ -1,0 +1,27 @@
+{
+  "name": "sap-hcp-express-proxy",
+  "version": "0.1.0",
+  "description": "Express.js proxy for the SAP HANA Cloud Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlenkeit/sap-hcp-express-proxy.git"
+  },
+  "keywords": [
+    "sap",
+    "hcp",
+    "hana",
+    "proxy",
+    "express",
+    "node"
+  ],
+  "author": "Maximilian Lenkeit <maximilian.lenkeit@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlenkeit/sap-hcp-express-proxy/issues"
+  },
+  "homepage": "https://github.com/mlenkeit/sap-hcp-express-proxy"
+}
