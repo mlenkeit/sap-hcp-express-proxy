@@ -4,7 +4,7 @@
   "description": "Express.js proxy for the SAP HANA Cloud Platform",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/mlenkeit/sap-hcp-express-proxy/issues"
   },
-  "homepage": "https://github.com/mlenkeit/sap-hcp-express-proxy"
+  "homepage": "https://github.com/mlenkeit/sap-hcp-express-proxy",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.7",
+    "load-grunt-tasks": "^3.1.0",
+    "mocha": "^2.2.1"
+  }
 }
