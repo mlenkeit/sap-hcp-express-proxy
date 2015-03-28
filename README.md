@@ -1,4 +1,4 @@
-# sap-hcp-express-proxy
+# sap-hcp-express-proxy [![npm version](https://badge.fury.io/js/sap-hcp-express-proxy.svg)](http://badge.fury.io/js/sap-hcp-express-proxy) [![Build Status](https://travis-ci.org/mlenkeit/sap-hcp-express-proxy.svg?branch=master)](https://travis-ci.org/mlenkeit/sap-hcp-express-proxy)
 
 Express.js proxy for the SAP HANA Cloud Platform.
 
