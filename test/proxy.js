@@ -100,6 +100,33 @@ describe('proxy', function() {
 				});
 		});
 
+		it('should authenticate only once when multiple requests are send', function(done) {
+			credentials = validCredentials;
+
+			request(app)
+				.get(serviceEndpoint)
+				.set('Authorization', getAuthorizationHeaderValueFromCredentials(credentials))
+				.expect(function() {
+					fakeHanaSaml.callCount.should.be.exactly(1, 'number of calls to hana saml');
+				})
+				.expect(serviceEndpointResponse)
+				.expect(200, function() {
+					// second, subsequent request
+					request(app)
+						.get(serviceEndpoint)
+						.set('Authorization', getAuthorizationHeaderValueFromCredentials(credentials))
+						.expect(function() {
+							fakeHanaSaml.callCount.should.be.exactly(1, 'number of calls to hana saml');
+
+							serviceNock.done();
+						})
+						.expect(serviceEndpointResponse)
+						.expect(200, done);
+				});
+
+
+		});
+
 	});
 
 });
