@@ -16,7 +16,7 @@
     "hana",
     "proxy",
     "express",
-    "node"
+    "middleware"
   ],
   "author": "Maximilian Lenkeit <maximilian.lenkeit@gmail.com>",
   "license": "MIT",
