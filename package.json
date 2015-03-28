@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "basic-auth": "^1.0.0",
+    "hanatrial-auth-proxy": "file:..\\..\\..\\AppData\\Local\\Temp\\npm-12676-e5ec95cc\\git-cache-d733b6340da3\\9cdc66be49ba13ba604a8f42d599831181ffc4ab",
     "request": "^2.54.0"
   }
 }
